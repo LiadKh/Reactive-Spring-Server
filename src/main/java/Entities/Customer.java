@@ -1,4 +1,4 @@
-package server;
+package Entities;
 
 public class Customer {
 

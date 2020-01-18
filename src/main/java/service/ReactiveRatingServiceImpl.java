@@ -1,4 +1,4 @@
-package server;
+package service;
 
 import java.time.Instant;
 
@@ -7,6 +7,10 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import Entities.Customer;
+import Entities.Product;
+import Entities.Review;
+import crud.ReactiveRatingCrud;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

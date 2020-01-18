@@ -1,4 +1,4 @@
-package server;
+package Exceptions;
 
 public class BadReqException extends RuntimeException {
 

@@ -1,27 +1,32 @@
-package server;
+package Entities;
 
+import java.time.Instant;
 import java.util.Map;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-public class ReviewBoundary {
+@Document(collection = "reviews")
+public class Review {
 	private String id;
 	private Customer customer;
 	private Product product;
 	private Integer rating;
 	private Map<String,Object> reviewContent;
+	private Instant reviewTimestamp;
 
-	public ReviewBoundary() {
+	public Review() {
 
 	}
 
-	public ReviewBoundary(String id, Customer customer, Product product, Integer rating, Map<String,Object> reviewContent) {
+	public Review(Customer customer, Product product, Integer rating, Map<String,Object> reviewContent,
+			Instant reviewTimestamp) {
 		super();
-		this.id = id;
 		this.customer = customer;
 		this.product = product;
 		this.rating = rating;
 		this.reviewContent = reviewContent;
+		this.reviewTimestamp = reviewTimestamp;
 	}
 
 	@Id
@@ -63,5 +68,13 @@ public class ReviewBoundary {
 
 	public void setReviewContent(Map<String,Object> reviewContent) {
 		this.reviewContent = reviewContent;
+	}
+
+	public Instant getReviewTimestamp() {
+		return reviewTimestamp;
+	}
+
+	public void setReviewTimestamp(Instant reviewTimestamp) {
+		this.reviewTimestamp = reviewTimestamp;
 	}
 }
