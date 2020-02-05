@@ -20,4 +20,4 @@ The server is run on port 8095 (you can change it in the application.properties 
 
 Go to [http://localhost:8095/swagger-ui.html](http://localhost:8095/swagger-ui.html) using swagger UI
 
-If you want to connect to non-local mongodb instance all you need to the url to application.properties under **spring.data.mongodb.uri** filed
+If you want to connect to non-local mongodb instance all you need to add url in application.properties under **spring.data.mongodb.uri** filed
