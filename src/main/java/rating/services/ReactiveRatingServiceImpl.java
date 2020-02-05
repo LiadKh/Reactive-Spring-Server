@@ -1,4 +1,4 @@
-package service;
+package rating.services;
 
 import java.time.Instant;
 
@@ -7,10 +7,10 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import Entities.Customer;
-import Entities.Product;
-import Entities.Review;
-import crud.ReactiveRatingCrud;
+import rating.crud.ReactiveRatingCrud;
+import rating.entities.Customer;
+import rating.entities.Product;
+import rating.entities.Review;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

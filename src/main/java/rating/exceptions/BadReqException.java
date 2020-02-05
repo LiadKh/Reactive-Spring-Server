@@ -1,4 +1,4 @@
-package Exceptions;
+package rating.exceptions;
 
 public class BadReqException extends RuntimeException {
 

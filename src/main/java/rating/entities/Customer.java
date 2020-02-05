@@ -1,4 +1,4 @@
-package Entities;
+package rating.entities;
 
 public class Customer {
 

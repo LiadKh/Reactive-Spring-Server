@@ -1,11 +1,11 @@
-package crud;
+package rating.crud;
 
 import java.time.Instant;
 
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
-import Entities.Review;
+import rating.entities.Review;
 import reactor.core.publisher.Flux;
 
 public interface ReactiveRatingCrud extends ReactiveMongoRepository<Review, String> {

@@ -1,8 +1,8 @@
-package service;
+package rating.services;
 
 import java.time.Instant;
 
-import Entities.Review;
+import rating.entities.Review;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
